@@ -37,5 +37,22 @@ body {
 /*--------------*/
 
 header {
+    height: 70px;
+}
 
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
 }
