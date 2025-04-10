@@ -97,7 +97,7 @@ header nav ul a {
 }
 
 .hero .boite h1 {
-    font: bold 4.8rem "Roboto", sans-serif; 
+    font: bold 4.8rem "Roboto", sans-serif;
 }
 
 .hero .boite button {
@@ -140,9 +140,9 @@ header nav ul a {
 
 .container-produits {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 35px; 
-  }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
 
 .produit {
     width: 375px;
@@ -160,10 +160,13 @@ header nav ul a {
     font: 1.8rem "Roboto", sans-serif;
     color: black;
 }
-.produit:hover, .produit:hover h3, .produit:hover p {
+
+.produit:hover,
+.produit:hover h3,
+.produit:hover p {
     background-color: #E25254;
     color: white;
-  }
+}
 
 
 /*--------------*/
@@ -178,22 +181,103 @@ header nav ul a {
     justify-content: center;
     align-items: center;
     color: white;
-    
-}
-
-.section-conseils h1{
-    font: bold 3.6rem "Josefin Sans", sans-serif;
-}
-
-.section-conseils {
-    font: 1.8rem "Roboto", sans-serif;
 }
 
 .container-conseils {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+}
+
+.conseil {
+    height: 335px;
+    padding: 30px;
+    background-color: white;
+    color: #E25254;
+}
+
+.conseil .LirePlus {
+    color: black;
+    text-align: right;
+    cursor: pointer;
+}
+
+.conseil p {
+    color: black;
+    line-height: 30px;
+}
+
+.container-conseils h3 {
+    font: bold 2.2rem "Josefin Sans", sans-serif;
+}
+
+.section-conseils h2 {
+    font: bold 3.6rem "Josefin Sans", sans-serif;
+}
+
+.section-conseils p {
+    font: 1.8rem "Roboto", sans-serif;
+}
+
+.container-conseils span {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.container-conseils a {
+    text-decoration: none;
+}
+
+.conseil:hover,
+.conseil:hover p,
+.conseil:hover span {
+    background-color: #E25254;
+    color: white;
+}
+
+/*--------------*/
+/*--- FOOTER ---*/
+/*--------------*/
+
+footer .wrapper {
+    height: 60px;
+    padding: 0 100px;
+    background-color: #E25254;
+    color: white;
+    font: 1.8rem "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
-  
+
+/*------------------------------------------------------------------------------
+   Modales
+------------------------------------------------------------------------------*/
+
+.modale {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: #E25254;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50rem;
+    text-align: center;
+}
+
+.modale.visible {
+    display: block;
+}
+
+.modale p {
+    margin: 200px 0 0 0;
+    cursor: pointer;
+}
