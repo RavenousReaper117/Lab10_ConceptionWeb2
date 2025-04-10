@@ -164,4 +164,36 @@ header nav ul a {
     background-color: #E25254;
     color: white;
   }
+
+
+/*--------------*/
+/*-- CONSEILS --*/
+/*--------------*/
+
+.section-conseils .wrapper {
+    height: 600px;
+    padding: 100px;
+    background-image: url("../images/Conseils.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.section-conseils h1{
+    font: bold 3.6rem "Josefin Sans", sans-serif;
+}
+
+.section-conseils {
+    font: 1.8rem "Roboto", sans-serif;
+}
+
+.container-conseils {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
   
